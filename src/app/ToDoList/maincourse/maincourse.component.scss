@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+
+.course{
+    display: flex;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 320px;
+    padding-right: 245px;
+    padding-top: 50px;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-left: 40px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-radius: 0px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.edit{
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border-radius: 0px;
+    border:none;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.delete{
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    border-radius: 0px;
+    border:none;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-left: 15px;
+}
+
+.author{
+    padding-left: 15px;
+}
+
+.search-add{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.searchButton{
+    font-size: 20px;
+    color: white;
+    border-radius: 0px;
+    border:none;
+    margin-bottom: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: dimgrey;
+    width: 100px;
+}
+
+.searchInput{
+    font-size: 20px;
+    border-radius: 0px;
+    border: 2px dimgrey solid;
+    margin-bottom: 20px;
+    padding: 9px;
+    cursor: pointer;
+    margin-right: 20px;
+}

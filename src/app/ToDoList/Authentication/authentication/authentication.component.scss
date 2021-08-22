@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.authentication{
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.login, .password{
+    display: inline-flex;
+}
+
+.form-control{
+    max-height: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.button{
+    max-width: 50px;
+}
+
+.uncorrect{
+    color: red;
+    visibility: hidden;
+}
+
