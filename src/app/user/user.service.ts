@@ -8,6 +8,6 @@ export class UserService {
   constructor() { }
   public admin ={
     email:"admin",
-    password:"loginoff",
+    password:"admin",
   }
 }

@@ -8,7 +8,7 @@ import { MaincourseComponent } from './ToDoList/maincourse/maincourse.component'
 const routes: Routes = [
   {path: '', redirectTo:'/login', pathMatch:'full'},
   {path:'login', component: AuthenticationComponent},
-  {path: 'cources', component: MaincourseComponent, canActivate:[AuthGuard]},
+  {path: 'courses', component: MaincourseComponent, canActivate: [AuthGuard]},
   {path: 'addcource', component: AddcourceComponent}
 ];
 

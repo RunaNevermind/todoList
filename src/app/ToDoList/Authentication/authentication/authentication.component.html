@@ -1,20 +1,42 @@
-<form [formGroup]="loginForm">
-    <div class="container">
-        <div class="container__wrapper">
-            <div class="authentication">
-                <div class="uncorrect" name="uncorrect" >*Uncorrect login or password</div>
-                <div class="login">
-                    <p>Login</p>
-                    <input type="text" class="form-control" formControlName="inputLogin" name="inputLogin" placeholder="Enter" >
-                </div>
-                <div class="password">
-                    <p>Password</p>
-                    <input type="password" class="form-control" formControlName="inputPassword" placeholder="Enter" name="inputPassword" >
-                </div>
-                <br>
-                <button routerLink="/cources" name="button" (click)="myValid()" class="button" >Login</button>
-            </div>            
+<form>
+  <div class="container">
+    <div class="container__wrapper">
+      <div class="authentication">
+        <div class="uncorrect" name="uncorrect">
+          *Uncorrect login or password
         </div>
+        <div class="login">
+          <label for="login">Login</label>
+          <input
+            type="text"
+            class="form-control"
+            id="login"
+            name="inputLogin"
+            placeholder="Enter"
+            [(ngModel)]="inputLogin"
+          />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Enter"
+            name="inputPassword"
+            [(ngModel)]="inputPassword"
+          />
+        </div>
+        <br />
+        <button
+          routerLink="/courses"
+          name="button"
+          (click)="validation.myValid(this.inputLogin, this.inputPassword)"
+          class="button"
+        >
+          Login
+        </button>
+      </div>
     </div>
+  </div>
 </form>
-
