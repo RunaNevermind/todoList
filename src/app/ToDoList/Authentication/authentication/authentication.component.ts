@@ -15,5 +15,12 @@ export class AuthenticationComponent {
   public inputLogin: string = '';
   public inputPassword: string = '';
   validateState: boolean = this.validation.validateState;
-
+  removeWarning:boolean=true;
+  hideIt(){
+    if(this.inputLogin!==" "||this.inputPassword!==" "){
+      this.removeWarning=false;
+      return this.removeWarning;
+    }
+    return this.removeWarning;
+  }
 }

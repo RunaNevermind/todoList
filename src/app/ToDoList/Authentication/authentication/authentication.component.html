@@ -2,7 +2,7 @@
   <div class="container">
     <div class="container__wrapper">
       <div class="authentication">
-        <div class="uncorrect" name="uncorrect">
+        <div class="uncorrect" name="uncorrect" [hidden]="removeWarning">
           *Uncorrect login or password
         </div>
         <div class="login">
@@ -31,7 +31,7 @@
         <button
           routerLink="/courses"
           name="button"
-          (click)="validation.myValid(this.inputLogin, this.inputPassword)"
+          (click)="validation.myValid(this.inputLogin, this.inputPassword);hideIt()"
           class="button"
         >
           Login
