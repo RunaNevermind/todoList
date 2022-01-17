@@ -1,7 +1,12 @@
 .container{
     display: flex;
     justify-content: center;
+}
 
+.container_wrapper{
+    display: flex;
+
+    flex-direction: column;    
 }
 
 .nameCource{
@@ -41,4 +46,8 @@
     padding: 10px;
     cursor: pointer;
     width: 200px;
+}
+
+.enterSave{
+    color: red;
 }

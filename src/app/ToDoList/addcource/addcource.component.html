@@ -1,19 +1,33 @@
+
 <div class="container">
-    <div class="container__wrapper">
+    <div class="container_wrapper">
         <div class="Header">
-            <input type="text" class="nameCource" placeholder="Enter name">
-        </div>
-        <div class="info">
-            <input type="text" class="infoAboutCource" placeholder="Enter info about cource">
-        </div>
-        <div class="footer">
-            <div class="author">
-                <input type="text" class="authorName" placeholder="Your name">
+                <input type="text"
+                    class="nameCource"
+                    placeholder="Enter name"
+                    [(ngModel)]="cource.name"
+                    >
             </div>
-            <div class="save">
-                <button class="saveCource">Add Cource</button>
+            <div class="info">
+                <input type="text"
+                    class="infoAboutCource"
+                    placeholder="Enter info about cource"
+                    [(ngModel)]="cource.synopsis"
+                >
             </div>
-        </div>
-        
+            <div class="footer">
+                <div class="author">
+                    <input type="text"
+                        class="authorName"
+                        placeholder="Your name"
+                        [(ngModel)]="cource.author"
+                        >
+                </div>
+                <div class="save">
+                    <button routerLink="/courсes" class="saveCource" on-click="saveCource()" >Add Cource</button>
+                    <p class="enterSave" [hidden]="visible">*Enter something everywhere</p>
+                </div>
+            </div>        
     </div>
+    
 </div>

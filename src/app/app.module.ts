@@ -9,8 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddcourceComponent } from './ToDoList/addcource/addcource.component';
 import { UserService } from './user/user.service';
-import { CourceService } from './cource/cource.service';
 import { AuthGuard } from './ToDoList/Authentication/service/auth.guard';
+import { CourceListComponent } from './ToDoList/courceList/cource-list/cource-list.component';
 
 
 
@@ -24,6 +24,7 @@ import { AuthGuard } from './ToDoList/Authentication/service/auth.guard';
     HeaderComponent,
     FooterComponent,
     AddcourceComponent,
+    CourceListComponent,
   ],
   imports: [
     FormsModule,
@@ -31,7 +32,7 @@ import { AuthGuard } from './ToDoList/Authentication/service/auth.guard';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [UserService, AuthenticationComponent, CourceService],
+  providers: [UserService, AuthenticationComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

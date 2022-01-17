@@ -1,22 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { CourceService } from 'src/app/cource/cource.service';
-
+import { Component, } from '@angular/core';
 @Component({
   selector: 'app-maincourse',
   templateUrl: './maincourse.component.html',
-  styleUrls: ['./maincourse.component.scss']
+  styleUrls: ['./maincourse.component.scss'],
+
 })
 
-export class MaincourseComponent implements OnInit {
 
+export class MaincourseComponent{
 
-  constructor(private userCourse:CourceService) {
-
-  }
-
-
-  ngOnInit(): void {
-    this.userCourse.getAll();
-  }
-
+  
 }
