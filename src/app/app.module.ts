@@ -11,6 +11,8 @@ import { AddcourceComponent } from './ToDoList/addcource/addcource.component';
 import { UserService } from './user/user.service';
 import { AuthGuard } from './ToDoList/Authentication/service/auth.guard';
 import { CourceListComponent } from './ToDoList/courceList/cource-list/cource-list.component';
+import { CourceService } from './cource/cource.service';
+
 
 
 
@@ -32,7 +34,7 @@ import { CourceListComponent } from './ToDoList/courceList/cource-list/cource-li
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [UserService, AuthenticationComponent],
+  providers: [UserService, AuthenticationComponent, CourceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

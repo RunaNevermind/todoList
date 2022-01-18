@@ -29,7 +29,8 @@ export class CourceService {
       }
   ]
 
-  getAll(){
+  public getAll(){
+    console.log(this.cource);
     return this.cource;
   }
 
