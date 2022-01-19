@@ -11,19 +11,19 @@ export class Cource{
 })
 export class AddcourceComponent {
   visible:boolean=true;
-  cource: Cource = new Cource("","","");
-  cources: Cource[]=[];
+  cources: Cource = new Cource("","","");
+  cource: Cource[]=[];
 
  
   constructor(private router: Router){}
   saveCource(){
-    if(this.cource.name!==""&& this.cource.synopsis!==""&& this.cource.author!==""){
-      this.cources.push(new Cource(this.cource.name, this.cource.synopsis, this.cource.author));
-      localStorage.setItem("cource", JSON.stringify(this.cources));
-      this.cource.name="";
-      this.cource.synopsis="";
-      this.cource.author="";
-      return this.cource;
+    if(this.cources.name!==""&& this.cources.synopsis!==""&& this.cources.author!==""){
+      this.cource.push(new Cource(this.cources.name, this.cources.synopsis, this.cources.author));
+      localStorage.setItem("cources", JSON.stringify(this.cources));
+      this.cources.name="";
+      this.cources.synopsis="";
+      this.cources.author="";
+      return this.cources;
     }
     else{
       return this.visible=false
