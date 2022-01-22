@@ -1,10 +1,20 @@
 
-.headerLogin{
+.container{
     border: 1px solid gray;
     display: flex;
-    flex-wrap: nowrap;
     max-width: 70%;
     margin-left: 320px;
+    justify-content: space-between;
+}
+
+.userInfo{
+    margin-right: 30px;
+    font-size: 30px;
+    color: #ff311f;
+}
+
+.headerAvatar{
+    margin-left: 30px;
 }
 
 .name{
@@ -21,4 +31,5 @@
     margin-left: 30px;
     position: relative;
     top: 10px;
+    left: 5px;
 }

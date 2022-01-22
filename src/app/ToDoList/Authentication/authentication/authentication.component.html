@@ -5,10 +5,13 @@
         <div class="uncorrect" name="uncorrect" [hidden]="removeWarning">
           *Uncorrect login or password
         </div>
+
         <div class="login">
           <label for="login">Login</label>
           <input
             type="text"
+            autocomplete="off"
+            list="user"            
             class="form-control"
             id="login"
             name="inputLogin"
@@ -16,6 +19,11 @@
             [(ngModel)]="inputLogin"
           />
         </div>
+
+        <datalist id="user">
+          <option value="admin"></option>
+        </datalist>
+
         <div class="password">
           <label for="password">Password</label>
           <input

@@ -2,26 +2,28 @@
 <div class="container">
     <div class="container_wrapper">
         <div class="Header">
-                <input type="text"
-                    class="nameCource"
-                    placeholder="Enter name"
-                    [(ngModel)]="cources.name"
-                    >
+            <input type="text"
+                class="nameCource"
+                placeholder="Enter name"
+                [(ngModel)]="cources.name"
+                >
             </div>
+
             <div class="info">
-                <input type="text"
+                <p><textarea
                     class="infoAboutCource"
                     placeholder="Enter info about cource"
                     [(ngModel)]="cources.synopsis"
-                >
+                ></textarea></p>
             </div>
+
             <div class="footer">
                 <div class="author">
                     <input type="text"
                         class="authorName"
                         placeholder="Your name"
                         [(ngModel)]="cources.author"
-                        >
+                    >
                 </div>
                 <div class="save">
                     <button routerLink="/courсes" class="saveCource" on-click="saveCource()" >Add Cource</button>

@@ -1,8 +1,12 @@
 <div class="container">
-    <div class="headerLogin">
-        <p class="square"></p>
-        <p class="name">Login</p>
-    </div>    
+        <div class="headerAvatar">
+            <p class="square"></p>
+            <p class="name">Login</p>            
+        </div>
+        <div class="userInfo" [hidden]="removeUser">
+            <p>login: {{userEmail}}</p>
+            <p>password: {{userPassword}}</p>
+        </div>        
 </div>
 
 
